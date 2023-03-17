@@ -30,7 +30,7 @@ export default function Home({ products }: HomeProps) {
   return (
     <>
       <Head>
-        <title>Home | Ignite Shop</title>
+        <title>Home | Gamer Shop</title>
       </Head>
 
       <HomeContainer ref={sliderRef} className="keen-slider">

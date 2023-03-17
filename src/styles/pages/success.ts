@@ -25,13 +25,13 @@ export const SuccessContainer = styled('main', {
   a: {
     marginTop: '5rem',
     display: 'block',
-    color: '$green500',
+    color: '$purple500',
     fontSize: '$l',
     textDecoration: 'none',
     fontWeight: 'bold',
 
     '&:hover': {
-      color: '$green300',
+      color: '$purple300',
     }
   }
 })
@@ -40,17 +40,28 @@ export const ImageContainer = styled('div', {
   width: '100%',
   maxWidth: 130,
   height: 145,
-  background: 'linear-gradient(180deg, #1EA483 0%, #7465D4 100%);',
-  borderRadius: 8,
-  padding: '.25rem',
+  background: 'linear-gradient(180deg, $purple500 0%, #7465D4 100%);',
+  borderRadius: 1000,
+  padding: '1rem',
 
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   marginTop: '4rem',
 
+  div: {
+    display: 'flex',
+  },
 
   img: {
-    objectFit: 'cover'
+    objectFit: 'fill',
+    borderRadius: 9999,
   }
+})
+
+export const ProductsContainer = styled('div', {
+  display:"flex",
+  gap: 16,
+
+  marginBottom: '1rem'
 })
